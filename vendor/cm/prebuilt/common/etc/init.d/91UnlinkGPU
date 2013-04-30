@@ -1,0 +1,3 @@
+#!/system/bin/sh
+
+echo 'Y' > /sys/module/tegra3_clocks/parameters/detach_shared_bus
