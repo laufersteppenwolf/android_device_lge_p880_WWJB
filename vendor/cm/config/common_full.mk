@@ -43,10 +43,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/91UnlinkGPU:system/etc/init.d/91UnlinkGPU
     
-# Install GPS Country Optimizer by djnilse, RingLocker ba AChep and ButtonLED by GermainZ
+# Install GPS Country Optimizer by djnilse, RingLocker by AChep and ButtonLED by GermainZ
 PRODUCT_COPY-FILES += \
     vendor/cm/prebuilt/common/app/GPSCountryOptimizer.apk:system/app/GPSCountryOptimizer.apk \
     vendor/cm/prebuilt/common/app/RingLocker.apk:system/app/RingLocker.apk \
     vendor/cm/prebuilt/common/app/ButtonLED.apk:system/app/ButtonLED.apk \
-    
-    
+  
+# Install APEX and ES File Explorer
+PRODUCT_COPY-FILES += \
+    vendor/cm/prebuilt/common/app/Apex.apk:system/app/Apex.apk \
+    vendor/cm/prebuilt/common/app/ESFileExplorer.apk:system/app/ESFileExplorer.apk \
