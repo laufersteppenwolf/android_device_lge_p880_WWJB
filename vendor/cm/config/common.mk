@@ -216,7 +216,7 @@ ifdef CM_BUILDTYPE
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
     CM_BUILDTYPE := WerewolfJB
-    CM_EXTRAVERSION :=v003
+    CM_EXTRAVERSION :=v005
 endif
 
 ifdef CM_RELEASE
