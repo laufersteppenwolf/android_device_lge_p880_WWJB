@@ -1,5 +1,0 @@
-#!/system/bin/sh
-
-echo 'Y' > /sys/module/tegra3_clocks/parameters/detach_shared_bus
-
-chmod 666 /sys/kernel/debug/clock/pll_c/rate && echo '330000000' > /sys/kernel/debug/clock/pll_c/rate && echo '330000000' > /sys/kernel/debug/clock/3d/rate && echo '330000000' > /sys/kernel/debug/clock/3d2/rate
