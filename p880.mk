@@ -120,6 +120,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.rmnet-down:system/bin/init.rmnet-down \
     $(LOCAL_PATH)/prebuilt/init.rawip:system/bin/init.rawip
 
+# Copy Tweaks
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/91UnlinkGPU:system/etc/init.d/91UnlinkGPU
+    
+# Install GPS Country Optimizer by djnilse, RingLocker by AChep and ButtonLED by GermainZ
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/RingLocker.apk:system/app/RingLocker.apk \
+    vendor/cm/prebuilt/common/app/ButtonLED.apk:system/app/ButtonLED.apk \
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_p880
 PRODUCT_DEVICE := p880
