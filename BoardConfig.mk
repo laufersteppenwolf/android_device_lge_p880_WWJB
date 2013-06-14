@@ -74,3 +74,14 @@ BOARD_RIL_CLASS := ../../../device/lge/p880/ril/
 
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p880/recovery-gfx.c
 BOARD_CHARGER_ENABLE_SUSPEND := true
+
+
+
+# Copy Tweaks
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/91UnlinkGPU:system/etc/init.d/91UnlinkGPU
+    
+# Install GPS Country Optimizer by djnilse, RingLocker by AChep and ButtonLED by GermainZ
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/RingLocker.apk:system/app/RingLocker.apk \
+    vendor/cm/prebuilt/common/app/ButtonLED.apk:system/app/ButtonLED.apk \
